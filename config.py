@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6190103290:AAE1EImGmhh8JDjR8eOyHrIlC_TWih2gnjg")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "15671595"))
@@ -19,16 +19,16 @@ APP_ID = int(os.environ.get("APP_ID", "15671595"))
 API_HASH = os.environ.get("API_HASH", "bb8f36f9c39a24c7f8b2acbc7ea8c60a")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001647532916"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5732833763"))
+OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Fileshare:Fileshare@cluster0.dwx7qv5.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
@@ -58,10 +58,10 @@ PROTECT_CONTENT = False if os.environ.get('PROTECT_CONTENT', "False") == "False"
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot\n\nJoin our main channel @KS_Korean_Drama_Hindi"
+USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot\n\nJoin our main channel @TG_UPDATES1"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1150044195)
+ADMINS.append(5732833763)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
